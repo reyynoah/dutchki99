@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parfum OOP</title>
+  <link rel="stylesheet" href="shop.css" />
+</head>
+<body>
+
+  <header>
+    <a href="" class="logo"><img src="" alt=""></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+        <li><a href="lanpag.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="payment.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="parent">
+    <div class="cart-icon-container" onclick="toggleCart()">
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Keranjang" class="cart-icon" />
+      <span id="cart-count" class="cart-count">0</span>
+    </div>
+  </div>
+
+  <main>
+    <div class="container" id="product-list">
+      <!-- Produk akan dimuat dengan JavaScript -->
+    </div>
+  </main>
+
+  <section id="cart-section" class="cart-section" style="display: none;">
+    <h2>Keranjang Belanja</h2>
+    <div id="cart-items" class="cart-container"></div>
+    <button id="checkout-btn" class="checkout-btn" style="display: none;" onclick="goToCheckout()">Checkout</button>
+  </section>
+
+  <script src="shop.js"></script>
+</body>
+</html>

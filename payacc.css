@@ -1,0 +1,112 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #7AD7F0, #4D9FEC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.success-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.checkmark-circle {
+    width: 100px;
+    height: 100px;
+    background: #28a745;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    animation: popUp 0.8s ease forwards;
+}
+
+.checkmark {
+    font-size: 50px;
+    color: white;
+}
+
+h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.btn-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-home:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .success-card {
+        padding: 30px 20px;
+    }
+
+    .checkmark-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .checkmark {
+        font-size: 40px;
+    }
+}

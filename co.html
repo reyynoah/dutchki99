@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Cookie Box</title>
+  <link rel="stylesheet" href="co.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Dutchki’s 99</div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="payment.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <section class="product-list">
+      <div id="cart-items"></div>
+    </section>
+
+    <section class="summary">
+      <h3>Ringkasan Pesanan</h3>
+      <p>Jumlah Barang: <span id="total-items">0</span></p>
+      <p>Harga sebelum diskon: <span id="subtotal">Rp 0</span></p>
+      <p><strong>Total Harga: <span id="total">Rp 0</span></strong></p>
+
+      <input type="text" id="name" placeholder="Nama Lengkap" />
+      <input type="text" id="phone" placeholder="Nomor Telepon" />
+      <textarea id="address" placeholder="Alamat Pengiriman"></textarea>
+
+      <input type="text" id="coupon" placeholder="Masukkan kode kupon" />
+      <button class="btn apply">Terapkan</button>
+      <button class="btn pay">Lanjut ke Pembayaran</button>
+      <button class="btn clear">Hapus Semua Produk</button>
+    </section>
+  </main>
+
+  <script src="co.js"></script>
+</body>
+</html>
